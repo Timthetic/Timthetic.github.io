@@ -1,22 +1,29 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import makeStyles from '@material-ui/core/styles/makeStyles'
+import { Typography } from '@material-ui/core';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+const useStyles = makeStyles(theme => ({
+	header: {
+		background: theme.palette.primary.main,
+	},
+	title: {
+		margin: `0 auto`,
+		padding: `1rem 1rem`,
+		maxWidth: `1200px`,
+		marginBottom: `8px`
+	}
+}));
+
+
+const Header = ({ siteTitle }) => {
+	const classes = useStyles()
+  return <header
+    className={classes.header}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+    <div className={classes.title}>
+      <Typography variant='h5' component='h1' style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,10 +33,10 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </Typography>
     </div>
   </header>
-)
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
