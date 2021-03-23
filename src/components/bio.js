@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 const Bio = () => {
 	const classes = useStyles()
   return <div>
-		<Typography variant='h4' component='h2'>
+		<Typography variant='h5' component='h2'>
 			Bio
 		</Typography>
 		<Box className={classes.bioBox}>

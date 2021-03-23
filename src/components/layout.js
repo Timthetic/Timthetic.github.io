@@ -16,25 +16,25 @@ import "./layout.css"
 const overwrittenTheme = responsiveFontSizes(createMuiTheme({
 	palette: {
 		primary: {
-			main: '#206020',
-			light: '#509010',
+			main: '#40A710',
+			light: '#80F020',
 			dark: '#202000',
 			contrastText: '#fff'
 		},
 		secondary: {
 			main: '#D0D010',
-			light: '#f05b84',
-			dark: '#A0A020',
+			light: '#F0F010',
+			dark: '#707010',
+			contrastText: '#fff'
+		},
+		grey: {
+			main: 'grey',
+			light: 'lightgray',
+			dark: 'darkgray',
 			contrastText: '#fff'
 		}
-	},
-	typography: {
-		fontSize: 16,
-		fontFamily: '"Poppins", sans-serif',
-		body1: { fontFamily: '"Open Sans", sans-serif' },
-		button: { fontFamily: '"Open Sans", sans-serif' }
 	}
-}));
+}))
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
