@@ -1,10 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Card, CardContent, Box, CardActions, IconButton, Collapse, Divider } from '@material-ui/core'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Typography, Card, CardContent, Box, CardActions, Divider } from '@material-ui/core'
+import Img from 'gatsby-image'
 
 import { GitHub } from '@material-ui/icons'
 
@@ -46,14 +45,8 @@ const useStyles = makeStyles(theme => ({
 	}
 }));
 
-const ProjectCard = ({title, affiliation, type, repository, description, tech}) => {
+const ProjectCard = ({title, affiliation, type, repository, description, tech, image}) => {
 	const classes = useStyles();
-
-	const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   return <Card className={classes.projectCard}>
 		<Box className={classes.cardButtons}>
@@ -70,6 +63,9 @@ const ProjectCard = ({title, affiliation, type, repository, description, tech}) 
 				</button>
 			</a>
 			</CardActions>
+		</Box>
+		<Box display='flex' justifyContent='space-around'>
+			<Img fixed={image}/>
 		</Box>
 		<CardContent className={classes.projectDescription}>
 			<Typography>
