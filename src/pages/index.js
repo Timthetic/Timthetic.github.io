@@ -8,11 +8,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Bio from "../components/bio"
+import Projects from "../components/projects"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Bio/>
+		<Projects/>
   </Layout>
 )
 

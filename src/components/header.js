@@ -53,18 +53,18 @@ const Header = ({ siteTitle }) => {
 				<div className={classes.navMenu}>
 					<Typography variant='h6' component='h2' className={classes.menuOption}>
 						<Link
-							to="/"
+							to="#bio"
 							style={{
 								color: `white`,
 								textDecoration: `none`,
 							}}
 						>
-							Home
+							Bio
 						</Link>
 					</Typography>
 					<Typography variant='h6' component='h2' className={classes.menuOption}>
 						<Link
-							to="/projects"
+							to="#projects"
 							style={{
 								color: `white`,
 								textDecoration: `none`,

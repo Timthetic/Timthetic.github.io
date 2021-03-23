@@ -1,8 +1,5 @@
 import * as React from "react"
-// import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import ProjectCard from "../components/ProjectCard"
 import { Typography, Grid } from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles'
@@ -15,10 +12,10 @@ const useStyles = makeStyles(theme => ({
 	}
 }));
 
-const ProjectsPage = () => {
+const Projects = () => {
 	const classes = useStyles();
-  return <Layout>
-    <SEO title="Projects" />
+  return <>
+		<div id='projects' className='anchor'/>
     <Typography variant='h5' component='h2' className={classes.sectionTitle}>
 			Projects
 		</Typography>
@@ -29,7 +26,7 @@ const ProjectsPage = () => {
 				</Grid>
 			)}
 		</Grid>
-  </Layout>
+  </>
 }
 
-export default ProjectsPage
+export default Projects

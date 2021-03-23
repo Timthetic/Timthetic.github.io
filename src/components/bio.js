@@ -29,7 +29,8 @@ const useStyles = makeStyles(theme => ({
 
 const Bio = () => {
 	const classes = useStyles()
-  return <div>
+  return <>
+		<div id="bio" className='anchor'/>
 		<Typography variant='h5' component='h2'>
 			Bio
 		</Typography>
@@ -39,7 +40,7 @@ const Bio = () => {
       </Typography>
 			<img className={classes.TimImage} src={TimImage} width='30%' alt="Tim Rediehs in a suit with bubble tea" />
 		</Box>
-	</div>
+	</>
 }
 
 Bio.propTypes = {
