@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { MuiThemeProvider, createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import makeStyles from '@material-ui/core/styles/makeStyles'
 
 import Header from "./header"
 import "./layout.css"
@@ -17,7 +18,7 @@ const overwrittenTheme = responsiveFontSizes(createMuiTheme({
 	palette: {
 		primary: {
 			main: '#40A710',
-			light: '#80F020',
+			light: '#70E020',
 			dark: '#202000',
 			contrastText: '#fff'
 		},
@@ -36,6 +37,10 @@ const overwrittenTheme = responsiveFontSizes(createMuiTheme({
 	}
 }))
 
+const useStyles = makeStyles(theme => ({
+	appBarSpacer: theme.mixins.toolbar
+}))
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -46,10 +51,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+	let classes = useStyles()
   return (
     <MuiThemeProvider theme={overwrittenTheme}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+			<div className={classes.appBarSpacer}></div>
       <div
         style={{
           margin: `0 auto`,

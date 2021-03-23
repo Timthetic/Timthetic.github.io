@@ -15,7 +15,8 @@ const useStyles = makeStyles(theme => ({
 		}
 	},
 	bioText: {
-		marginRight: '16px'
+		marginRight: '16px',
+		marginBottom: '16px'
 	},
 	TimImage: {
 		width: '30%',
