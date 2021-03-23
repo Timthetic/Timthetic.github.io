@@ -1,15 +1,17 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
+import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Card, CardContent, Box } from '@material-ui/core'
+import { Typography, Card, CardContent, Box, CardActions, IconButton, Collapse, Divider } from '@material-ui/core'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { GitHub } from '@material-ui/icons'
 
 
 const useStyles = makeStyles(theme => ({
 	affiliation: {
-		color: theme.palette.grey.main
+		color: theme.palette.grey.dark
 	},
 	githubButton: {
 		marginLeft: '8px',

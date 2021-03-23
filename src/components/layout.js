@@ -29,9 +29,9 @@ const overwrittenTheme = responsiveFontSizes(createMuiTheme({
 			contrastText: '#fff'
 		},
 		grey: {
-			main: 'grey',
-			light: 'lightgray',
-			dark: 'darkgray',
+			main: 'lightgray',
+			light: '#EAEAEA',
+			dark: 'gray',
 			contrastText: '#fff'
 		}
 	}
