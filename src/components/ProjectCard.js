@@ -20,23 +20,39 @@ const useStyles = makeStyles(theme => ({
 		padding: '4px',
 		borderRadius: '8px',
 		outline: 'none',
-		backgroundColor: theme.palette.grey.light,
+		backgroundColor: theme.palette.grey.main,
 		'&:hover':{
-			backgroundColor: theme.palette.grey.main
+			backgroundColor: theme.palette.grey.light,
+			cursor: 'pointer'
 		}
 	},
 	gitHubIcon: {
 		marginRight: '8px'
+	},
+	expandOpen: {
+    transform: 'rotate(180deg)',
+  },
+	cardButtons: {
+		display: 'flex',
+		justifyContent: 'space-between'
 	}
 }));
 
-const ProjectCard = ({title, affiliation, type, repository}) => {
+const ProjectCard = ({title, affiliation, type, repository, description, tech}) => {
 	const classes = useStyles();
+
+	const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   return <Card>
     <CardContent>
 			<Typography>{title} ({type})</Typography>
 			<Typography variant='body2' className={classes.affiliation}>{affiliation}</Typography>
 		</CardContent>
+		<CardActions className={classes.cardButtons}>
 		<a href={repository} target='_blank' rel='noreferrer'>
 			<button className={classes.githubButton}>
 				<Box display='flex'>
@@ -47,13 +63,40 @@ const ProjectCard = ({title, affiliation, type, repository}) => {
 				</Box>
 			</button>
 		</a>
+		<IconButton
+			className={clsx(classes.expand, {
+				[classes.expandOpen]: expanded,
+			})}
+			onClick={handleExpandClick}
+			aria-expanded={expanded}
+			aria-label="show more"
+		>
+			<ExpandMoreIcon />
+		</IconButton>
+		</CardActions>
+		<Collapse in={expanded} timeout="auto" unmountOnExit>
+			<CardContent>
+				<Typography>
+					{description}
+				</Typography>
+				<Divider/>
+				<Typography style={{fontWeight: 'bold'}}>
+					Tech:
+				</Typography>
+				<Typography>
+					{tech.join(", ")}
+				</Typography>
+			</CardContent>
+		</Collapse>
   </Card>
 }
 
 ProjectCard.propTypes = {
-  title: PropTypes.string,
+	title: PropTypes.string,
 	affiliation: PropTypes.string,
 	type: PropTypes.string,
+	description: PropTypes.string,
+	tech: PropTypes.array
 }
 
 // ProjectCard.defaultProps = {
