@@ -24,7 +24,7 @@ const ProjectsPage = () => {
 		</Typography>
 		<Grid container spacing={1}>
 			{projectList.map( project => 
-				<Grid item key={project.title} md={4} sm={6} xs={12}>
+				<Grid item key={project.title} sm={6} xs={12}>
 					<ProjectCard {...project}/>
 				</Grid>
 			)}
