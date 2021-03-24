@@ -4,6 +4,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Box, Typography } from '@material-ui/core';
 
 import TimImage from "../images/tim_rediehs_and_jamie.jpg"
+import { bio } from "../data/bio"
 
 const useStyles = makeStyles(theme => ({
 	bioBox: {
@@ -36,7 +37,7 @@ const Bio = () => {
 		</Typography>
 		<Box className={classes.bioBox}>
       <Typography className={classes.bioText} varient='p'>
-			I’m a senior at UCLA studying Computer Science. I think the opportunity to learn is one of the most valuable things in a career. Some of my skills are programming in C++, JavaSript, Go, Lisp, Ruby on Rails, and Swift. I also help others learn software development as a part of UCLA ACM Hack where we teach a variety of programming skills. Although I focus on building software, teaching is something that I have always loved. 
+			 {bio}
       </Typography>
 			<img className={classes.TimImage} src={TimImage} width='30%' alt="Tim Rediehs in a suit with bubble tea" />
 		</Box>
