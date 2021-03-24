@@ -73,6 +73,17 @@ const Header = ({ siteTitle }) => {
 							Projects
 						</Link>
 					</Typography>
+					<Typography variant='h6' component='h2' className={classes.menuOption}>
+						<Link
+							to="#experience"
+							style={{
+								color: `white`,
+								textDecoration: `none`,
+							}}
+						>
+							Experience
+						</Link>
+					</Typography>
 				</div>
 			</Toolbar>
 		</AppBar>
