@@ -34,6 +34,15 @@ let projects = [
 		description: 'A web application I created with a team for class. It\'s a social networking app that focuses on getting people with similar interests together. It was inspired by my need to find other Magic: The Gathering™ players.',
 		tech: ['Swagger', 'Go', 'JavaScript', 'REST API', 'Postgresql', 'React'],
 		id: 'DownToMeet'
+	},
+	{
+		title: 'GPU Optimization of CNN',
+		affiliation: 'UCLA: CS 133 – Parallel and Distributed Systems',
+		type: 'OpenCL CLI',
+		repository: null,
+		description: 'I sped up a Convolutional Neural Network by optimizing it for a GPU. This was a very interesting project because the GPU\'s architecture is very different than a CPU\'s. Optimizing it required a very different thought process than what I was used to.',
+		tech: ['C++', 'OpenCL', 'AWS'],
+		id: 'GPUOptimization'
 	}
 ]
 

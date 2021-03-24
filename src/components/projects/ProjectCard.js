@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 		borderRadius: '8px',
 		outline: 'none',
 		backgroundColor: theme.palette.grey.main,
-		'&:hover':{
+		'&:hover:enabled':{
 			backgroundColor: theme.palette.grey.light,
 			cursor: 'pointer'
 		}
@@ -56,7 +56,7 @@ const ProjectCard = ({title, affiliation, type, repository, description, tech, i
 			</CardContent>
 			<CardActions className={classes.cardButtons}>
 			<a href={repository} target='_blank' rel='noreferrer'>
-				<button className={classes.githubButton}>
+				<button className={classes.githubButton} disabled={repository === null}>
 					<Box>
 						<GitHub/> 
 					</Box>
