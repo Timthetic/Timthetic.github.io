@@ -51,50 +51,50 @@ const Header = ({ siteTitle }) => {
 					</Typography>
 				</div>
 				<div className={classes.navMenu}>
-					<Typography variant='h6' component='h2' className={classes.menuOption}>
-						<Link
-							to="#bio"
-							style={{
-								color: `white`,
-								textDecoration: `none`,
-							}}
-						>
+					<Link
+						to="#bio"
+						style={{
+							color: `white`,
+							textDecoration: `none`,
+						}}
+					>
+						<Typography variant='h6' component='h2' className={classes.menuOption}>
 							Bio
-						</Link>
-					</Typography>
-					<Typography variant='h6' component='h2' className={classes.menuOption}>
-						<Link
-							to="#projects"
-							style={{
-								color: `white`,
-								textDecoration: `none`,
-							}}
-						>
-							Projects
-						</Link>
-					</Typography>
-					<Typography variant='h6' component='h2' className={classes.menuOption}>
-						<Link
-							to="#experience"
-							style={{
-								color: `white`,
-								textDecoration: `none`,
-							}}
-						>
+						</Typography>
+					</Link>
+					<Link
+						to="#projects"
+						style={{
+							color: `white`,
+							textDecoration: `none`,
+						}}
+					>
+						<Typography variant='h6' component='h2' className={classes.menuOption}>
+								Projects
+						</Typography>
+					</Link>
+					<Link
+						to="#experience"
+						style={{
+							color: `white`,
+							textDecoration: `none`,
+						}}
+					>
+						<Typography variant='h6' component='h2' className={classes.menuOption}>
 							Experience
-						</Link>
-					</Typography>
-					<Typography variant='h6' component='h2' className={classes.menuOption}>
-						<Link
-							to="#contact"
-							style={{
-								color: `white`,
-								textDecoration: `none`,
-							}}
-						>
+						</Typography>
+					</Link>
+					<Link
+						to="#contact"
+						style={{
+							color: `white`,
+							textDecoration: `none`,
+						}}
+					>
+						<Typography variant='h6' component='h2' className={classes.menuOption}>
 							Contact Me
-						</Link>
-					</Typography>
+						</Typography>
+					</Link>
 				</div>
 			</Toolbar>
 		</AppBar>
