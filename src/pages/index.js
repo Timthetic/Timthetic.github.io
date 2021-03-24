@@ -10,6 +10,7 @@ import SEO from "../components/seo"
 import Bio from "../components/bio/bio"
 import Projects from "../components/projects/projects"
 import Experience from "../components/experience/experience"
+import Contact from "../components/contact/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <Bio/>
 		<Projects/>
 		<Experience/>
+		<Contact/>
   </Layout>
 )
 

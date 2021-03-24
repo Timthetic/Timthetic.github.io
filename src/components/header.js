@@ -84,6 +84,17 @@ const Header = ({ siteTitle }) => {
 							Experience
 						</Link>
 					</Typography>
+					<Typography variant='h6' component='h2' className={classes.menuOption}>
+						<Link
+							to="#contact"
+							style={{
+								color: `white`,
+								textDecoration: `none`,
+							}}
+						>
+							Contact Me
+						</Link>
+					</Typography>
 				</div>
 			</Toolbar>
 		</AppBar>

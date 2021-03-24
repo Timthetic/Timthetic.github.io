@@ -39,7 +39,7 @@ const Experience = () => {
 		}
 	}
 	const experienceCards = experienceList.map( experience => {
-		return <Grid item key={experience.title} sm={12} xs={12}>
+		return <Grid item sm={12} xs={12} key={experience.id}>
 			<ExperienceCard {...experience} image={idToImageMap.get(experience.id)}/>
 		</Grid>
 	}
