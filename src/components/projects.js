@@ -9,6 +9,7 @@ import projectList from "../data/projects"
 
 const useStyles = makeStyles(theme => ({
 	sectionTitle: {
+		marginTop: '16px',
 		marginBottom: '8px'
 	}
 }));
@@ -45,7 +46,7 @@ const Projects = () => {
 	)
   return <>
 		<div id='projects' className='anchor'/>
-    <Typography variant='h5' component='h2' className={classes.sectionTitle}>
+    <Typography variant='h4' component='h2' className={classes.sectionTitle}>
 			Projects
 		</Typography>
 		<Grid container spacing={1}>

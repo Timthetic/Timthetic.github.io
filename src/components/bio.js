@@ -31,7 +31,7 @@ const Bio = () => {
 	const classes = useStyles()
   return <>
 		<div id="bio" className='anchor'/>
-		<Typography variant='h5' component='h2'>
+		<Typography variant='h4' component='h2'>
 			Bio
 		</Typography>
 		<Box className={classes.bioBox}>
