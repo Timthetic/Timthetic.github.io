@@ -1,11 +1,11 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import ProjectCard from "../components/ProjectCard"
+import ProjectCard from "./ProjectCard"
 import { Typography, Grid } from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles'
 
-import projectList from "../data/projects"
+import projectList from "../../data/projects"
 
 const useStyles = makeStyles(theme => ({
 	sectionTitle: {

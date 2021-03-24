@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Card, CardContent, Box, Divider } from '@material-ui/core'
 import Img from 'gatsby-image'
-import formatDate from '../util/dateFormat'
+import formatDate from '../../util/dateFormat'
 
 
 const useStyles = makeStyles(theme => ({

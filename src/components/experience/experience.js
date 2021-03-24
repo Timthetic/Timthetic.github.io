@@ -1,11 +1,11 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import ExperienceCard from "../components/experienceCard"
+import ExperienceCard from "./experienceCard"
 import { Typography, Grid } from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles'
 
-import experienceList from "../data/experience"
+import experienceList from "../../data/experience"
 
 const useStyles = makeStyles(theme => ({
 	sectionTitle: {

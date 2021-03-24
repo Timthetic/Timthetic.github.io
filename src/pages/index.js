@@ -7,9 +7,9 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Bio from "../components/bio"
-import Projects from "../components/projects"
-import Experience from "../components/experience"
+import Bio from "../components/bio/bio"
+import Projects from "../components/projects/projects"
+import Experience from "../components/experience/experience"
 
 const IndexPage = () => (
   <Layout>

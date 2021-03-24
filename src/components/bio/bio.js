@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Box, Typography } from '@material-ui/core';
 
-import TimImage from "../images/tim_rediehs_and_jamie.jpg"
-import { bio } from "../data/bio"
+import TimImage from "../../images/tim_rediehs_and_jamie.jpg"
+import { bio } from "../../data/bio"
 
 const useStyles = makeStyles(theme => ({
 	bioBox: {
