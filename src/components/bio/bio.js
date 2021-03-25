@@ -20,8 +20,8 @@ const useStyles = makeStyles(theme => ({
 		marginBottom: '16px'
 	},
 	TimImage: {
-		width: '300px',
-		maxHeight: '400px',
+		width: '293px',
+		height: '400px',
 		objectFit: 'contain',
 		marginBottom: 'auto',
 		[theme.breakpoints.down('xs')]:{
