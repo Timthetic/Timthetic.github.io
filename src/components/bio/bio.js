@@ -20,7 +20,10 @@ const useStyles = makeStyles(theme => ({
 		marginBottom: '16px'
 	},
 	TimImage: {
-		width: '30%',
+		width: '300px',
+		maxHeight: '400px',
+		objectFit: 'contain',
+		marginBottom: 'auto',
 		[theme.breakpoints.down('xs')]:{
 			width: '90%'
 		}
@@ -39,7 +42,7 @@ const Bio = () => {
       <Typography className={classes.bioText} varient='p'>
 			 {bio}
       </Typography>
-			{/* <img className={classes.TimImage} src={TimImage} width='30%' alt="Tim Rediehs in a suit with bubble tea" /> */}
+			<img className={classes.TimImage} src={TimImage} width='30%' alt="Tim Rediehs in a suit with bubble tea" />
 		</Box>
 	</>
 }
