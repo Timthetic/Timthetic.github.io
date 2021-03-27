@@ -32,7 +32,7 @@ let projects = [
 		type: 'Web App',
 		repository: 'https://github.com/downToMeet/downToMeet',
 		description: 'A web application I created with a team for class. It\'s a social networking app that focuses on getting people with similar interests together. It was inspired by my need to find other Magic: The Gathering™ players.',
-		tech: ['Swagger', 'Go', 'JavaScript', 'REST API', 'Postgresql', 'React'],
+		tech: ['Swagger', 'Go', 'JavaScript', 'REST API', 'Postgresql', 'React', 'Testing'],
 		id: 'DownToMeet'
 	},
 	{
