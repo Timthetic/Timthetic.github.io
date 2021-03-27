@@ -22,7 +22,7 @@ let projects = [
 		affiliation: 'UCLA: CS 188 – Scalable Internet Services',
 		type: 'Web App',
 		repository: 'https://github.com/scalableinternetservicesarchive/wanderlust',
-		description: 'A web application I created with a team for class. It was a location based art sharing platform that encouraged exploring (similar to Pokemon Go™).',
+		description: 'A web application I created with a team for class. It was a location based art sharing platform that encouraged exploring (similar to Pokemon Go™). We used tools like k6 and Honeycomb to find and eliminate bottlenecks in performance.',
 		tech: ['MySQL', 'React', 'NodeJS', 'GraphQL', 'k6', 'Honeycomb', 'load testing'],
 		id: 'Wanderlust'
 	},
