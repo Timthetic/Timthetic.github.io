@@ -14,7 +14,7 @@ import Contact from "../components/contact/contact"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Timothy Rediehs" description="Timothy Rediehs's personal website" />
     <Bio/>
 		<Projects/>
 		<Experience/>
