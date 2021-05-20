@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { MuiThemeProvider, createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import makeStyles from '@material-ui/core/styles/makeStyles'
+import { Typography } from '@material-ui/core';
 
 import Header from "./header"
 import "./layout.css"
@@ -70,7 +71,7 @@ const Layout = ({ children }) => {
 						textAlign: `center`
           }}
         >
-          © {new Date().getFullYear()}, Timothy Rediehs
+          <Typography>© {new Date().getFullYear()}, Timothy Rediehs</Typography>
         </footer>
       </div>
 		</MuiThemeProvider>

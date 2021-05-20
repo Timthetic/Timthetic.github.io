@@ -49,6 +49,9 @@ const Contact = () => {
 				</IconButton>
 			</Link>	
 		</Box>
+		<Box display='flex' justifyContent='center'>
+			<Typography>Download my <a href={`TimothyRediehs.pdf`} download>Resume</a></Typography>
+		</Box>
 	</>
 }
 
