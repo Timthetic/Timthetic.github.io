@@ -5,6 +5,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import resume from '../../static/TimothyRediehs.pdf'
 
 const useStyles = makeStyles(theme => ({
 	sectionTitle: {
@@ -50,7 +51,7 @@ const Contact = () => {
 			</Link>	
 		</Box>
 		<Box display='flex' justifyContent='center'>
-			<Typography>Download my <a href={`TimothyRediehs.pdf`} download>Resume</a></Typography>
+			<Typography>Download my <a href={resume} download>Resume</a></Typography>
 		</Box>
 	</>
 }
