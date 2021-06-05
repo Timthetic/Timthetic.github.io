@@ -2,5 +2,6 @@
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
   "static/TimothyRediehs.pdf": "static/TimothyRediehs-571dbcae8d6e124d2aef232decc1fe9a.pdf",
-  "static/tim_rediehs_and_jamie.jpg": "static/tim_rediehs_and_jamie-17225778d915d4be4b3e2f90bbc3167a.jpg"
+  "static/tim_rediehs_and_jamie.jpg": "static/tim_rediehs_and_jamie-17225778d915d4be4b3e2f90bbc3167a.jpg",
+  "static/tim_rediehs_headshot.png": "static/tim_rediehs_headshot-20f866cc737619c53a5d3b78bf5f893b.png"
 }
