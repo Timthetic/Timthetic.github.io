@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Box, Typography } from '@material-ui/core';
 
-import TimImage from "../../images/tim_rediehs_and_jamie.jpg"
+// import TimImage from "../../images/tim_rediehs_and_jamie.jpg"
+import TimImage from "../../images/tim_rediehs_headshot.png"
 import { bio } from "../../data/bio"
 
 const useStyles = makeStyles(theme => ({
@@ -21,7 +22,8 @@ const useStyles = makeStyles(theme => ({
 	},
 	TimImage: {
 		width: '293px',
-		height: '400px',
+		height: '293px',
+		borderRadius: '4px',
 		objectFit: 'contain',
 		marginBottom: 'auto',
 		[theme.breakpoints.down('xs')]:{
