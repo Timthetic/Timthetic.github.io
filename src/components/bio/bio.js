@@ -44,7 +44,7 @@ const Bio = () => {
       <Typography className={classes.bioText} varient='p'>
 			 {bio}
       </Typography>
-			<img className={classes.TimImage} src={TimImage} width='30%' alt="Tim Rediehs in a suit with bubble tea" />
+			<img className={classes.TimImage} src={TimImage} width='30%' alt="Head shot of Tim Rediehs" />
 		</Box>
 	</>
 }
